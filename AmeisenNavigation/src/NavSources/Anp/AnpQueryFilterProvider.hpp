@@ -2,9 +2,9 @@
 
 #include <unordered_map>
 
-#include "../../../recastnavigation/Detour/Include/DetourNavMeshQuery.h"
+#include "../../recastnavigation/Detour/Include/DetourNavMeshQuery.h"
 
-#include "../../../AmeisenNavigation.Exporter/src/Utils/Tri.hpp"
+#include "../../AmeisenNavigation.Exporter/src/Utils/Tri.hpp"
 
 #include "../IQueryFilterProvider.hpp"
 #include "../../Clients/ClientState.hpp"

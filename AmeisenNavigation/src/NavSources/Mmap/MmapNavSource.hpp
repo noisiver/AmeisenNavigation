@@ -153,9 +153,13 @@ private:
     /// <returns>Mmap format detected or MMAP_FORMAT::UNKNOWN</returns>
     inline MmapFormat TryDetectMmapFormat() noexcept
     {
+        int zero = 0;
+        int twentyseven = 27;
+        auto args = std::make_format_args(zero, twentyseven, twentyseven);
+
         for (const auto& [format, pattern] : MmapFormatPatterns)
         {
-            if (std::filesystem::exists(MmapFolder / std::vformat(pattern.second, std::make_format_args(0, 27, 27))))
+            if (std::filesystem::exists(MmapFolder / std::vformat(pattern.second, args)))
             {
                 return format;
             }

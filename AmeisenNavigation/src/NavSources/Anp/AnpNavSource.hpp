@@ -5,7 +5,7 @@
 
 #include "../INavSource.hpp"
 
-#include "../../../AmeisenNavigation.Pack/src/Anp.hpp"
+#include "../../AmeisenNavigation.Pack/src/Anp.hpp"
 
 class AnpNavSource : public INavSource
 {

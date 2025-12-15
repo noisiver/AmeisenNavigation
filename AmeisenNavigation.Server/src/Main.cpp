@@ -294,7 +294,7 @@ void ConfigureFilterCallback(ClientHandler* handler, char type, const void* data
 
     const FilterConfig* filterConfigs = &request.firstFilterConfig;
 
-    for (size_t i = 0; i < request.filterConfigCount; ++i)
+    for (int i = 0; i < request.filterConfigCount; ++i)
     {
         client->ConfigureQueryFilter(filterConfigs[i].areaId, filterConfigs[i].cost);
     }

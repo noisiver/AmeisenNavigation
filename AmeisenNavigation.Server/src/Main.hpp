@@ -2,7 +2,7 @@
 
 #include "AnTcpServer.hpp"
 
-#include "../../AmeisenNavigation/src/AmeisenNavigation.hpp"
+#include "AmeisenNavigation.hpp"
 
 #include "Config/Config.hpp"
 #include "Logging/AmeisenLogger.hpp"

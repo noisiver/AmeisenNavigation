@@ -1,5 +1,7 @@
 #pragma once
 
+#include <type_traits>
+
 struct Vector3
 {
     union

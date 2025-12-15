@@ -2,7 +2,7 @@
 
 #include <unordered_map>
 
-#include "../../../recastnavigation/Detour/Include/DetourNavMeshQuery.h"
+#include "../../recastnavigation/Detour/Include/DetourNavMeshQuery.h"
 
 #include "../IQueryFilterProvider.hpp"
 #include "335a/NavArea335a.hpp"
