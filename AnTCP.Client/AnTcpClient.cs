@@ -67,8 +67,8 @@ namespace AnTCP.Client
         {
             return SendData
             (
-                BitConverter.GetBytes(data.Length + 1).AsSpan(), 
-                new Span<byte>(&type, 1), 
+                BitConverter.GetBytes(data.Length + 1).AsSpan(),
+                new Span<byte>(&type, 1),
                 data
             );
         }
